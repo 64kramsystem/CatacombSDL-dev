@@ -113,7 +113,7 @@ void printbody()
 
 void levelcleared()
 {
-  char warp[3];
+  char warp[2];
   int value;
 
   leveldone=true;
@@ -123,7 +123,7 @@ void levelcleared()
     warp[0]='0';
   warp[1]=(char) background[altobj.y+2][altobj.x+1]-161;
   if ( (warp[1]<'0') || (warp[1]>'9') )
-    warp[2]=' ';
+    warp[1]=' ';
  value = atoi (warp);
 
   if (value>0)
